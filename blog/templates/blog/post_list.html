@@ -1,0 +1,11 @@
+{% extends 'base/base1.html' %}
+
+{% block content %}
+{% for post in posts %}
+    <div class="post">
+        <p><h6>publicado: {{ post.published_date }}</h6></p>
+        <h2><a href="/detalle/{{ post.title }}">🖹 {{ post.title }}</a></h2>
+    </div>
+{% endfor %}
+{% endblock %}
+

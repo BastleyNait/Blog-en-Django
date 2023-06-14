@@ -1,0 +1,50 @@
+body{
+    background-color: rgb(16, 16, 16);
+    font-family: 'Open Sans', 
+    sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+
+}
+.post {
+    margin: auto;
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+}
+nav {
+    background-color: darkgray;
+    padding: 8px 0px;
+    width: 90vh;
+}
+
+.titulo a {
+    color: white;
+    padding: 5px;
+}
+
+.post {
+    background-color: white;
+    border-color: black;
+    width: 90vh;
+}
+
+
+.navegacion ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+.navegacion a {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.post a {
+    color: black;
+}
