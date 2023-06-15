@@ -1,9 +1,9 @@
 {% extends 'base/base1.html' %}
 
 {% block content %}
-    <form action="" method="POST">
-        <p><input type="text"></p>
-        <p><textarea name="cuerpo" id="cuerpo" cols="30" rows="10"></textarea></p>
-        <button>Guardar</button>
+    <h2 class = "new">Nuevo Post</h2>
+    <form method="POST" class="new">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Save</button>
     </form>
 {% endblock %}

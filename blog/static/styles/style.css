@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(16, 16, 16);
+    background-color: rgb(50, 50, 50) ;
     font-family: 'Open Sans', 
     sans-serif;
     display: flex;
@@ -16,25 +16,52 @@ body{
 }
 nav {
     background-color: darkgray;
-    padding: 8px 0px;
+    padding: 8px 8px;
     width: 90vh;
+    transition: transform 0.3s ease;
 }
 
+nav a {
+    font-weight:bold;
+    font-size: 16px;
+    transition: font-size 0.3s ease;
+}
+
+nav a:hover{
+    font-size: 15px;
+    color:rgb(133, 249, 172);
+}
 .titulo a {
     color: white;
     padding: 5px;
+    transition: font-size 0.3s ease;
 }
 
+.titulo a:hover {
+    font-size: 30px;
+    color:rgb(133, 249, 172);
+}
 .post {
     background-color: white;
     border-color: black;
     width: 90vh;
+    padding: 10px 8px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.post a{
+    transition: 0.2s ease;
+}
+
+.post a:hover {
+    font-size: 22px;
 }
 
 
 .navegacion ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     list-style: none;
 }
 .navegacion a {
@@ -47,4 +74,46 @@ a {
 
 .post a {
     color: black;
+}
+
+.new {
+    background-color: white;
+    border-color: black;
+    width: 90vh;
+    padding: 10px 8px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.new textarea, input {
+    width: 80%;
+}
+
+input[type="text"] {
+    font-family: 'Open Sans', 
+    sans-serif;
+    padding: 5px;
+    border-radius: 8px;
+    border-width: 1px;
+    transition: 0.3s ease;
+}
+
+textarea {
+    font-family: 'Open Sans', 
+    sans-serif;
+    padding: 5px;
+    border-radius: 8px;
+    border-width: 1px;
+    transition: 0.3s ease;
+}
+
+input[type="text"]:focus {
+    background-color: rgb(133, 249, 172);
+    border-width: 1px;
+}
+
+textarea:focus {
+    background-color: rgb(133, 249, 172);
+    border-width: 1px;
 }
