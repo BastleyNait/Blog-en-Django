@@ -125,9 +125,3 @@ textarea:focus {
 main {
     width: 100%;
 }
-
-@media screen and(max-width: 500px) {
-    nav {
-    
-    }
-}
